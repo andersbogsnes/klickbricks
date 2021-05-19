@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "klickbrick"
+version = "0.1.0"
+description = "CLI for the klickbrick company"
+authors = ["Anders Bogsnes <andersbogsnes@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+click = "^8.0.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.4"
+
+[tool.poetry.scripts]
+klickbrick = 'klickbrick.cli:cli'
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
