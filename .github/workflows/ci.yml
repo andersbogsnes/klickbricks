@@ -10,5 +10,5 @@ jobs:
         with:
           python-version: 3.9
       - uses: snok/install-poetry@v1.1.4
-      - run: poetry install --dev
+      - run: poetry install
       - run: pytest
